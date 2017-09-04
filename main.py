@@ -60,13 +60,6 @@ def main(stdscr):
     pad7 = curses.newwin(ht,wt,1,1)
     pad8 = curses.newwin(ht,wt,1,6)
     pad9 = curses.newwin(ht,wt,1,11)
-    #for y in range(0,99):
-     #   for x in range(0,99):
-      #      pad.addch(y,x, ord('a')+(x*x+y*y) % 26)
-        #    pad.border()
-       #     pad.refresh(0,0,5,5,30,60) # 0,0, start_y, start_x, koniec_y, koniec_x
-         #   sleep(0.000001)
-    #stdscr.border()
     
     #plansza ramka
     
