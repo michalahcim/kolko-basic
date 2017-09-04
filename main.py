@@ -31,7 +31,7 @@ def wygranko(p):
     elif p ==3:
         print("Krzyzyki wygraly")
     else:
-        print("Zakonczono dzialanie programu")
+        print("Nikt nie wygral")
 def main(stdscr):
     stdscr = curses.initscr()
     
@@ -120,9 +120,10 @@ def main(stdscr):
         #wczytanie klawisza i ewentualne wstawienie symbolu
         key = stdscr.getch()
         
-        if key is 27: #break przy esc
+        if key is 27 or ruch >= 8: #break przy esc i pelnej planszy
+            p0 = None
             break
-        
+            
         if key is 49:
             if p1 != 0: #czy zajete 
                 continue
